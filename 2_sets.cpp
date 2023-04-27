@@ -1,14 +1,15 @@
 // make two set of n integer such that there sum is equal
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
     long long n;
-
-    cin >> n;
-    long long arr[n];
-    long long temp[n];
-    long long temp1[n];
+    cin>>n;
+    //int *arr{new int[n]};
+    long long *arr{new long long[n]};
+    long long *temp{new long long[n]};
+    long long *temp1{new long long[n]};
+    
     for (long long i = 1; i <= n; i++)
     {
         arr[i] = i;
@@ -67,4 +68,5 @@ int main()
         cout << endl;
         cout << "NO ";
     }
+    return 0;
 }
